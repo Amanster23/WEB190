@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--
+        Aman Malik
+        WEB 190 - Fall 2021
+        Mod 3 Lab
+        9/12/2021
+    -->
+<head>	
+<title>Mod 3 Lab</title>
+<meta charset="utf-8">
+<viewport" content="width=device-width,initial-scale=1.0">
+<style>
+   * {
+       box-sizing: border-box;
+   } 
+   body {
+       font-family: Verdana, Geneva, Tahoma, sans-serif
+   }
+   #wrapper {
+       width: 80%;
+       margin-left: auto;
+       margin-right: auto;
+   }
+   header {
+       text-decoration: underline;
+   }
+   nav {
+       display: flex;
+       background-color: rgb(228, 142, 142);
+   }
+   nav a {
+       text-decoration: none;
+       text-align: center;
+       padding: 20px;
+   }
+   nav a:hover {
+       background-color:bisque
+   }
+   .row {
+       display: flex;
+       flex-wrap: wrap;
+   }
+   .side {
+       flex: 30%;
+       padding: 20px;
+       background-color:cornsilk
+   }
+   .main {
+       flex: 70%;
+       padding: 20px;
+       background-color: rgba(105, 105, 105, 0.5);
+   }
+   #main {
+       border: 1px solid black;
+   }
+   #address {
+        border: 1px solid black;
+   }
+   footer {
+        border: 1px solid black;
+        text-align: center;
+   }
+   @media screen and (max-width: 700px) {
+       .row {
+           flex-direction: column;
+       }
+       nav {
+           flex-direction: column;
+       }
+       #wrapper {
+           width: 100%;
+       }
+   }
+</style>
+</head>
+<body>
+<div id="wrapper">
+    <header>
+        <h1>Basic HTML/CSS Layout</h1>
+    </header>
+    <nav>
+        <a href="#">Nav 1</a>
+        <a href="#">Nav 2</a>
+        <a href="#">Nav 3</a>
+        <a href="#">Nav 4</a>
+        <a href="#">Nav 5</a>
+    </nav>
+    <div class="row">
+        <div class="side">
+            <h2>This is the site.</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi aliquid asperiores dolores eaque saepe sit aliquam error nesciunt repellat, at suscipit eum totam! Adipisci, esse enim quam dolorem harum illo.</p>
+        </div>
+        <div class="main">
+            <h2>This is important.</h2>
+            <p>This is a paragraph.</p>
+            <p>This is a paragraph.</p>
+            <p>This is a paragraph.</p>
+            <p>This is a paragraph.</p>
+
+            <div id="address">
+                Aman Malik <br>
+                Schaumburg, IL <br>
+                <a href="mailto:email@example.com">Send Email to email@example.com</a>
+
+            </div> <!--address id-->
+        </div> <!--main class-->
+    </div> <!--row class-->
+    <footer>
+        <p class="fnav">
+            <a href="#">Nav 1</a>
+            <a href="#">Nav 2</a>
+            <a href="#">Nav 3</a>
+            <a href="#">Nav 4</a>
+            <a href="#">Nav 5</a>
+        </p>
+        <p>Copyright 2021, Aman Malik</p>
+    </footer>
+</div> <!--wrapper id-->
+</body>
+</html>
+
+
+
+
+
+
+
+
+

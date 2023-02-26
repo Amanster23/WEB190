@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>	
+     <!--
+        Aman Malik
+        WEB190
+        Module 5 Lab - Part 2
+        9/27/2021
+    -->
+<title>Module 5 - Grid Intro (Part 2)</title>
+<meta charset="utf-8">
+<style>
+    .grid-container {
+        display: grid;
+        grid-gap: 10px;
+        background-color: darkturquoise;
+        padding: auto;
+        justify-content: space-evenly;
+    }
+    .grid-container > div {
+        background-color: rgb(182, 182, 241);
+        text-align: center;
+        font-size: 30px;
+    }
+    .grid-container1 {
+        display: grid;
+        grid-gap: 10px;
+        background-color: rgb(163, 20, 168);
+        padding: auto;
+        align-content: center;
+    }
+    .grid-container1 > div {
+        background-color: rgb(35, 255, 6);
+        text-align: center;
+        font-size: 30px;
+    }
+</style>
+</head>
+<body>
+    <header>
+        <h1>WEB190 - Module 5 Lab, Part 2</h1>
+    </header>
+    <h2>Grid Area #1: This container demonstrates the justify-content - space-evenly: </h2>
+    <div class="grid-container">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+        <div class="item4">4</div>
+        <div class="item5">5</div>
+        <div class="item6">6</div>
+    </div>
+    <p>The justify-content: space-evenly; property distributes all the grid items evenly and they have equal space around them.</p>
+    <hr>
+    <h2>Grid Area #2: This container demonstrates the align-content - center: </h2>
+    <div class="grid-container1">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+        <div class="item4">4</div>
+        <div class="item5">5</div>
+        <div class="item6">6</div>
+    </div>
+    <p>The align-content: center; property packs all the grid items around the center of the container.</p>
+</body>
+</html>
+
+
+
+
+
+
+
+
+

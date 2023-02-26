@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--
+        Aman Malik
+        WEB 190
+        Module 4 Lab
+        9/21/2021
+    -->
+    <title>Mod 4</title>
+    <meta charset="utf-8">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #wrapper {
+            margin: auto;
+            width: 90%;
+            border: thin solid black 1px;
+        }
+
+        header {
+            background-color: deepskyblue;
+            color: white;
+            padding: 20px;
+        }
+
+        main {
+            padding: 20px;
+            border-top: thin solid black;
+            border-bottom: thin solid black;
+        }
+
+        .flex-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            background-color: cyan;
+        }
+
+        .flex-container>div {
+            background-color: #f1f1f1;
+            width: 250px;
+            margin: 10px;
+            text-align: center;
+            line-height: 25px;
+            font-size: 1.1em;
+        }
+
+        .flex-container>div>img {
+            width: 100%;
+            height: auto;
+        }
+
+        footer {
+            background-color: deepskyblue;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 1.1em;
+        }
+
+        @media screen and (max-width: 700px) {
+            #wrapper {
+                width: 100%;
+            }
+
+            .flex-container>div {
+                width: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrapper">
+        <header>
+            <h1>WEB190 - Fall 2021: Module 4</h1>
+        </header>
+        <main>
+            <h2>The justify-content Property</h2>
+            <p>The "justify-content: space-around;" declaration displays the flex items with space before, between, and
+                after the lines:</p>
+        </main>
+        <div class="flex-container">
+            <div><img src="IMG_0456.jpg">The Lake Express at the dock in Milwaukee</div>
+            <div><img src="IMG_0457.jpg">Top Deck of Lake Express</div>
+            <div><img src="IMG_0458.jpg">Leaving Milwaukee</div>
+            <div><img src="IMG_0460.jpg">Wake</div>
+            <div><img src="IMG_0470.jpg">The Beach at Goderich, Ontario, Canada</div>
+            <div><img src="IMG_0477.jpg">The Harbor at Tobermory, Ontario, Canada</div>
+            <div><img src="IMG_0478.jpg">Boat Dock, Tobermory</div>
+            <div><img src="IMG_0482.jpg">Monarch Butterfly</div>
+            <div><img src="IMG_0484.jpg">The Chi-Cheemaun approaching the dock in Tobermory
+            </div>
+        </div>
+        <footer>
+            <p>Copyright&copy;, 2021</p>
+        </footer>
+    </div>
+</body>
+
+</html>
